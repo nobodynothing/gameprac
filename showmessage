@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+var msg = require('./message.json');
+
+console.log(msg.message);

@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+var readline = require('readline');
+
+var rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+
+  rl.question("What is the first number?", function(num1) {
+    rl.question("What is the second number?", function(num2) {
+
+        var answer = parseInt(num1) + parseInt(num2);
+        console.log("Your answer is: " + answer);
+
+
+      rl.close();
+    })
+    })
